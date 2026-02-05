@@ -1,0 +1,46 @@
+*
+{
+    margin: 0; /*remover margens do navegador*/
+    padding: 0; /*remover preenchimentos padrão do navegador*/
+    box-sizing: border-box; /*garante que as bordas nao aumentem o tamanho dos elementos*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilisar nossa barra de navegação*/
+.navbar
+{
+    background-color: #353535;
+    color: rgb(247, 244, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px rgba( 0,0,0,0.1);
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0%; /*remove as margens da lista*/
+    padding: 0%; /*remove o preenchimento interno*/
+}
+
+.navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.navbar ul li a:hover{
+    background-color: aliceblue; /* adiciona um fundo branco*/
+    color: #353535; /*adiciona uma cor diferente ao texto*/
+    box-shadow: 0px 4px 10px rgba( 0,0,0,0.3);
+    /*0px -> move na horizontal
+    4px ->move na vertical
+    10 px desfoque de 10px na sombra
+    rgba(0.0.0.3) adiciona a cor preta e uma transparencia de 30%(0.3)
+    */
+    transform: translate(-2px); /* move a box 2px para cima*/
+
+}
