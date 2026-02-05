@@ -44,3 +44,76 @@
     transform: translate(-2px); /* move a box 2px para cima*/
 
 }
+
+/*container que limita o tamanho do carrosel*/
+.slider {
+    margin: 20px auto; /* centraliza na tela e da margem no topo*/
+    width: 800px; /*largua fixa do carrosel*/
+    height: 400px; /* Altura fixa do carrosel*/
+    overflow: hidden;/* Esconde o que estiver fora da caixa (as outras fotos)*/
+    border-radius: 10px; /* Cantos arredondados*/
+    box-shadow: 0px 10px 20px rgba( 0,0,0,0.3);/*sombra para dar proofindidade*/
+
+}
+
+.slider-content
+{
+    width: 400%;
+    height: 100%; /* Ocupa 100% da aultura do objeto PAI*/
+    display: flex; /* Coloca as imagens uma do lado da outra*/
+}
+
+/* Esconde os botões originais*/
+.slider-content input
+{
+    display: none; /* Esconde os botões RADIOS*/
+}
+/*Estilo de cada caixa de imagem*/
+.slider-box
+{
+    width: 25%; /*Cada foto ocupa 25%*/
+    transition: 0.6s;/*tempo de animação de deslize entre as fotos*/
+}
+
+/* garante que a imagem cubra todo espaço sem distorcer*/
+.slider-box  img{
+    width: 800px; /*largura fixa para manter o padrão*/
+    height: 400px;/* Altura fixa para manter o padrão*/
+    object-fit: cover; /*Corta a imagem para preencher o espaço sem achatar*/
+}
+
+/* Logica de movimento: ajustado para 4 imagens*/
+/* Imagem 1: margem 0 */
+#radio1:checked ~.first {margin-left: 0;}
+
+/* Imagem 2: pula a primeira (25%)*/
+#radius2:checked ~.first {margin-left: -25%;}
+
+/*Imagem 3:pula as duas primeiras 50%*/
+#radius3:checked ~.first {margin-left:-50%;}
+
+/*Imagem 4: pula as tres 75%*/
+#radius4:checked ~.first { margin-left: -75%;}
+
+/*Estilo dos botoes manuais*/
+.nav-manual
+{
+    position:absolute;/*fixamento fixo em relaçao ao slider*/
+    width: 800px;/*mesma largura do slider*/
+    margin-top: -40%;/*joga as bolinhas para dentro da imagem*/
+    display: flex;
+    justify-content:center;/*centraliza as bolinhas horizontalmente*/
+}
+
+.manual-btn
+{
+    border: 2px solid white;/*borda branca para visibilidade*/
+    padding: 5px; /* tamanho das bolinhas*/
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;/*espaçamento entre as bolinhas*/
+    transition: 0.3s;/* Suaviza a mudança de cor*/
+}
+.manual-btn:hover{
+    background-color: aliceblue;
+}
