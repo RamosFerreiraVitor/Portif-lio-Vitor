@@ -160,3 +160,37 @@
     padding: 40px 0 20px 0;
     margin-top: 50px; /*Afastar da galeria*/
 }
+.container-rodape{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Faz os itens pularem linhas em telas pequenas*/
+    max-width: 1200px;
+    margin: 0 auto; /*centralizar o conteiner na tela*/
+}
+.links-sociais a
+{
+    color:aliceblue;
+    text-decoration: none;
+    margin: 0 15px; /* espaçamento entre os links*/
+    font-weight: bold;
+    transition: 0.3s;
+}
+.links-sociais a:hover{
+    color:aliceblue;
+    text-shadow: 0 0 5px(255,255,255, 0.2);
+
+}
+.rodape-inferior{
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255, 0.1);/*linha divisoria*/
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+
+}
+.info-copyright p{
+    text-align: center;
+    margin: 5px 0  ;
+}
