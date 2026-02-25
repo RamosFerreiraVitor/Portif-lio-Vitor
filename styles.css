@@ -8,16 +8,35 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(192, 33, 33);
+}
+
 /* estilisar nossa barra de navegação*/
 .navbar {
-    background-color: #353535;
-    color: rgb(247, 244, 244);
+    background-color: #fbfafa;
+    color: rgb(8, 8, 8);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+.logo img {
+    margin-bottom: start;
+    width: 40px; /*tamanho da imagem*/
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+.imagem img {
+    width: 600px;
+    margin-right: -700px;
+    margin-top: -150px;
+}
+
 
 .navbar ul {
     display: flex;
@@ -29,7 +48,7 @@
 }
 
 .navbar ul li a {
-    color: aliceblue;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -40,7 +59,7 @@
 .navbar ul li a:hover {
     background-color: aliceblue;
     /* adiciona um fundo branco*/
-    color: #353535;
+    color: black;
     /*adiciona uma cor diferente ao texto*/
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     /*0px -> move na horizontal
@@ -193,4 +212,11 @@
 .info-copyright p{
     text-align: center;
     margin: 5px 0  ;
+}
+.text-content{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+    margin-right: 850;
+    color: #fbfafa;
+    
 }
