@@ -8,33 +8,48 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: rgb(192, 33, 33);
+body{
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
 }
-
+body::before
+{
+    background-image: url('https://imgs.pontofrio.com.br/1517619252/1xg.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
 /* estilisar nossa barra de navegação*/
 .navbar {
-    background-color: #fbfafa;
-    color: rgb(8, 8, 8);
+    background-color: #353535;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 .logo img {
     margin-bottom: start;
-    width: 40px; /*tamanho da imagem*/
+    width: 80px; /*tamanho da imagem*/
     height: auto;
     vertical-align: middle;
     margin-right: 8px;
+    height: auto;
 }
 
 
 .imagem img {
     width: 600px;
     margin-right: -700px;
-    margin-top: -150px;
+    margin-top: -500px;
 }
 
 
@@ -48,7 +63,7 @@ body {
 }
 
 .navbar ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -67,7 +82,7 @@ body {
     10 px desfoque de 10px na sombra
     rgba(0.0.0.3) adiciona a cor preta e uma transparencia de 30%(0.3)
     */
-    transform: translate(-2px);
+    transform: translateY(-2px);
     /* move a box 2px para cima*/
 
 }
@@ -217,6 +232,15 @@ body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:100px;
     margin-right: 850;
-    color: #fbfafa;
+    color: #000000;
     
 }
+.text-flash{
+    color: #000000;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width: 60%;
+    margin-left: 0px;   
+    text-align: justify;
+    margin-right: 100px;
+}   
